@@ -32,7 +32,7 @@ func MultiplicationS() string {
 
 func main() {
 	hasil := MultiplicationS()
-	port := "8080"
+	port := os.Getenv("PORT")
 
 	e := echo.New()
 
